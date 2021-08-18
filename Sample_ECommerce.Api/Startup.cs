@@ -10,6 +10,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Sample_ECommerce.Api.Models;
 
 namespace Sample_ECommerce.Api
 {
@@ -25,7 +27,7 @@ namespace Sample_ECommerce.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddDbContext<AppDataContext>(op => op.UseSqlServer(Configuration.GetConnectionString("Bank")));
             services.AddControllers();
         }
 
