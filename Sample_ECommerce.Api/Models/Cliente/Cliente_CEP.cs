@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Sample_ECommerce.Api.Models
@@ -14,5 +15,8 @@ namespace Sample_ECommerce.Api.Models
         public string Estado { get; set; }
         public string Cidade { get; set; }
         public Cliente_Cliente Cliente { get; set; }
+        [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd HH:mm:ss}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.DateTime)]
+        public DateTime ModifiedDate { get; set; }
     }
 }
