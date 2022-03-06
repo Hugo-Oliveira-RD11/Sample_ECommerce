@@ -42,5 +42,5 @@ public class Cliente_Cliente
     public ICollection<Cliente_Phone>? Phone { get; set; }
     public ICollection<Cliente_CEP>? CEP { get; set; }
     //public ICollection<Cliente_Cartao>? Cartao { get; set; }
-    public ICollection<Vendas_Vendas>? Vendas { get; set; }
+    public ICollection<Vendas_Vendas>? Compras { get; set; }
 }
