@@ -22,6 +22,8 @@ public class Produto_Produto
     public Caracteristicas_Preco? Preco { get; set; }
     public int DimensaoId { get; set; }
     public Caracteristicas_Dimensao? Dimensao { get; set; }
+    public int VendasId { get; set; }
+    public Vendas_Vendas? Vendas { get; set; }
 
     [Required]
     [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd HH:mm:ss}", ApplyFormatInEditMode = true)]

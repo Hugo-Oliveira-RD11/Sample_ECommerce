@@ -2,7 +2,7 @@ namespace Backend.Models.Cliente;
 public class Cliente_Phone
 {
        [Key]
-	public int ClienteID { get; set; }
+	    public int Id { get; set; }
 
        [Required]
        [DataType(DataType.PhoneNumber)]

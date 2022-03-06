@@ -22,6 +22,7 @@ public class Fornecedor_Fornecedor
     [StringLength(80,MinimumLength =10)]
     public string? Senha { get; set; }
     public ICollection<Fornecedor_Cep>? Cep { get; set; }
+    public ICollection<FornecedorVendas_FornecedorVendas>? FornecedorVendas { get; set; }
     public ICollection<Fornecedor_Phone>? Phone { get; set; }
     [Required]
     [DisplayFormat(DataFormatString = "{0:yyyy/MM/dd HH:mm:ss}", ApplyFormatInEditMode = true)]

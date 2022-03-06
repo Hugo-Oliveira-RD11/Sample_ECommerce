@@ -9,6 +9,8 @@ namespace Backend.Models.Produto.Caracteristicas
         public decimal Preco { get; set; }
         [Range(1,20)]
         public uint Desconto { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime ValidadeDesconto { get; set; }
         [Required]
         public Produto_Produto? Produto { get; set; }
         [Required]

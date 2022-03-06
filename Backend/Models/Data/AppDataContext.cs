@@ -1,4 +1,4 @@
-namespace Backend.Models;
+namespace Backend.Models.Data;
 public class AppDataContext : DbContext
 {
     public AppDataContext (DbContextOptions<AppDataContext> op) : base(op){}
@@ -6,6 +6,7 @@ public class AppDataContext : DbContext
     public DbSet<Cliente_Cliente> Clientes { get; set; } =null!;
     public DbSet<Fornecedor_Fornecedor> Fornecedores { get; set; } =null!;
     public DbSet<Produto_Produto> Produtos { get; set; } =null!;
+    public DbSet<Vendas_Vendas> Vendas { get; set; } = null!;
   protected override void OnModelCreating(ModelBuilder mb)
   {
   //definir a precição do preco!

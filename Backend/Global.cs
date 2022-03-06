@@ -4,3 +4,6 @@ global using Backend.Models.Cliente;
 global using Backend.Models.Fornecedor;
 global using Backend.Models.Produto;
 global using Backend.Models.Produto.Caracteristicas;
+global using Backend.Models.FornecedorVendas;
+global using Backend.Models.Vendas;
+global using Backend.Models.Data;
